@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,7 +15,7 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav pl-4 pr-40">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    <a class="nav-link" href="http://localhost:3000/">Home <span class="sr-only"></span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Features</a>
@@ -30,11 +31,15 @@ function NavBar() {
                     <input class="form-control mr-sm-2 additional-class" type="search" placeholder="Search Title..." aria-label="Search"></input>
                 </form >
             </div>
-            <button type="button" class="btn btn-outline-primary">
-                <FontAwesomeIcon icon="fa-solid fa-right-to-bracket" />
-                <FontAwesomeIcon icon="fa-thin fa-right-to-bracket" />
+            
+
+            <div>
+            <Link to="/login" className="btn btn-outline-primary">
+                <FontAwesomeIcon icon={["fa-solid", "fa-right-to-bracket"]} />
+                <FontAwesomeIcon icon={["fa-thin", "fa-right-to-bracket"]} />
                 Sign In
-            </button>
+            </Link>
+            </div>
         </nav>
     );
 }

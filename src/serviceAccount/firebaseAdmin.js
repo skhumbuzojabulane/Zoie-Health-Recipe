@@ -1,5 +1,5 @@
 const admin = require('firebase-admin');
-const serviceAccount = require('./serviceAccount/healthy-recipe-fbb2b-firebase-adminsdk-qcexx-30b5313b68.json');
+const serviceAccount = require('./healthy-recipe-fbb2b-firebase-adminsdk-qcexx-30b5313b68.json');
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),

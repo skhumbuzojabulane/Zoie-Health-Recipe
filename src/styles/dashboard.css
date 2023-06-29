@@ -1,0 +1,137 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dashboard-container {
+  display: flex;
+  height: 90vh; /* Set height to 100vh for full viewport height */
+}
+
+.control-panel {
+  width: 25%;
+  background-color: #f2f2f2;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding-top: 20px;
+}
+
+.content-area {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.hide-header .header {
+  display: none;
+}
+
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+  
+.logout-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    border-color: #fff;
+    border: #f2f2f2;
+    cursor: pointer;
+}
+
+.ButtonBackground {
+    background: linear-gradient(to right, #5A2E98, rgb(133, 55, 156), #3b5ae4) !important;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menuBackground {
+    padding: 20px;
+    padding-top: 20px;
+}
+
+button.logout-button {
+    all: unset;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: #f0f0f0;
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+  
+button.logout-button::after,
+button.logout-button::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+  
+button.logout-button::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: #28282d;
+    border-radius: 10px;
+}
+  
+button.logout-button::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+  
+button.logout-button:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+  
+button.logout-button:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+  
+button.logout-button:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}

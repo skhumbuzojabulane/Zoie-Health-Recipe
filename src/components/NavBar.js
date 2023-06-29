@@ -8,7 +8,7 @@ import '../styles/nav.css'
 function NavBar() {
     return (
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{ backgroundColor: '#5D2F9D !important', paddingLeft: '20px', paddingRight: '20px', }}>
-            <a class="navbar-brand" href="#">Health recipes</a>
+            <a class="navbar-brand" href="#">Health Recipes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

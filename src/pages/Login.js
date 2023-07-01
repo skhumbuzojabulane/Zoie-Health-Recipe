@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
 
 import '../styles/login.css';
 
@@ -14,13 +16,20 @@ function Login() {
     const username = event.target.uname.value;
     const password = event.target.pass.value;
 
-    // Check if the entered username and password match the hardcoded values
-    if (username === 'example@gmail.com' && password === 'Test@#1216') {
-      setLoggedIn(true); // Set login status to true
-      navigate('/dashboard'); // Navigate to the Dashboard route
-    } else {
-      alert('Invalid username or password'); // Show error message for invalid credentials
-    }
+    // Sign in with email and password using Firebase Authentication
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(username, password) // username= example@gmail.com pass= Skhumbuzo@2023
+      .then((userCredential) => {
+        // User successfully logged in
+        setLoggedIn(true); // Set login status to true
+        navigate('/dashboard'); // Navigate to the Dashboard route
+      })
+      .catch((error) => {
+        // Error occurred during login
+        console.error('Error logging in:', error);
+        alert('Invalid username or password'); // Show error message for invalid credentials
+      });
   };
 
   if (loggedIn) {

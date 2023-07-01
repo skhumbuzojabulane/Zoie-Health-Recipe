@@ -15,7 +15,7 @@ function App() {
       <Router>
         {!isDashboardScreen && <NavBar />} {/* Render the Top Navigation component unless on the Dashboard screen */}
         <Routes>
-          {/*<Route path="/" element={<Home />} />*/}
+          <Route path="/" element={<Home />} />
           <Route
             path="/login"
             element={<Login setIsDashboardScreen={setIsDashboardScreen} />}

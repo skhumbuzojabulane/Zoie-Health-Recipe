@@ -9,12 +9,15 @@ body,
 
 .dashboard-container {
   display: flex;
-  height: 90vh; /* Set height to 100vh for full viewport height */
+  height: 92vh; /* Set height to 100vh for full viewport height */
+  overflow-y: auto;
 }
 
 .control-panel {
   width: 25%;
   background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
 }
 
 .menu {

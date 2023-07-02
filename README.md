@@ -18,6 +18,10 @@ The structure of the project is very impressive and maintanable and it follows C
 
 Admin login details: username = [example@gmail.com] password = [Skhumbuzo@2023]
 
+(https://github.com/skhumbuzojabulane/Zoie-Health-Recipe/assets/73143829/6efa29a8-be15-4802-8fd3-43bb28386bc6)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,12 +1,12 @@
-Hello and Welcome to my Project
+# Hello and Welcome to my Project
 
-Author: Hlatshwayo Jabulane 
+# Author: Hlatshwayo Jabulane 
 
-# This project is building using React.js and it uses various CSS Frameworks, this include Bootstrap and other
-# I use Firebase NoSQL Database to store Log In and Recipes
-# Firebase Database stores all the upload recipes, this include, Recipe: Title, Instructions and Category, and the cover photo of that food.
+1. This project is building using React.js and it uses various CSS Frameworks, this include Bootstrap and other
+2. I use Firebase NoSQL Database to store Log In and Recipes
+3. Firebase Database stores all the upload recipes, this include, Recipe: Title, Instructions and Category, and the cover photo of that food.
 
-The structure of the project is very impressive and maintanable and it follows CI/CD preciples
+#The structure of the project is very impressive and maintanable and it follows CI/CD preciples
 
 #The project has 
 1. Home page whereall recipes are displayed and a nice courosoul slider, footer and hearder.
@@ -18,7 +18,11 @@ The structure of the project is very impressive and maintanable and it follows C
 
 Admin login details: username = [example@gmail.com] password = [Skhumbuzo@2023]
 
+#ScreenShots
+
 (https://github.com/skhumbuzojabulane/Zoie-Health-Recipe/assets/73143829/6efa29a8-be15-4802-8fd3-43bb28386bc6)
+
+![Screenshot 2023-07-02 172618](https://github.com/skhumbuzojabulane/Zoie-Health-Recipe/assets/73143829/9b65db30-1d4e-4c07-8907-1e97a488fa42)
 
 
 

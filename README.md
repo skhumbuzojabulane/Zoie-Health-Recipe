@@ -1,3 +1,23 @@
+Hello and Welcome to my Project
+
+Author: Hlatshwayo Jabulane 
+
+# This project is building using React.js and it uses various CSS Frameworks, this include Bootstrap and other
+# I use Firebase NoSQL Database to store Log In and Recipes
+# Firebase Database stores all the upload recipes, this include, Recipe: Title, Instructions and Category, and the cover photo of that food.
+
+The structure of the project is very impressive and maintanable and it follows CI/CD preciples
+
+#The project has 
+1. Home page whereall recipes are displayed and a nice courosoul slider, footer and hearder.
+2. Search engine but that feature is cooming soon
+3. Sign In page where admin can login and publih new recipes or can perform CRUID operation on existing recipes
+4. Dashboard screen where you can post new recipes, view and about the app version, in simple terms its the controll center
+
+#This is very excellent app!!!
+
+Admin login details: username = [example@gmail.com] password = [Skhumbuzo@2023]
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

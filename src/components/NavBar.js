@@ -15,16 +15,16 @@ function NavBar() {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav pl-4 pr-40">
                 <li class="nav-item active">
-                    <a class="nav-link" href="http://localhost:3000/">Home <span class="sr-only"></span></a>
+                    <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
+                <Link className="nav-link disabled" >#Recipes</Link>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
+                    <a class="nav-link disabled" href="#">#Health</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                    <a class="nav-link disabled" href="#">#Recipes</a>
                 </li>
                 </ul>
                 <form class="form-inline">

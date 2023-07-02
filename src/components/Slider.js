@@ -13,15 +13,15 @@ export default function App() {
     <Carousel showIndicators showThumbs={false} emulateTouch infiniteLoop>
       <div>
         <img src={image33} alt="Fruits and Vegies" />
-        <p className="legend">First slide label</p>
+        <p className="legend">Fruits & Vegies</p>
       </div>
       <div>
         <img src={image22} alt="Kitchin Baking" />
-        <p className="legend">Second slide label</p>
+        <p className="legend">Home Kitchin</p>
       </div>
       <div>
         <img src={image11} alt="Baking" />
-        <p className="legend">Third slide label</p>
+        <p className="legend">Bread & Soups</p>
       </div>
     </Carousel>
   );

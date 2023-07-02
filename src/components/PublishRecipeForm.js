@@ -7,7 +7,6 @@ import '../styles/publishRecipeForm.css'; // Import the CSS file
 
 // Initialize Firebase
 const firebaseConfig = {
-  // Your Firebase configuration
   apiKey: "AIzaSyA38ZQFOUSELiwmlYOA76TnWZrY28dUt9E",
   authDomain: "healthy-recipe-fbb2b.firebaseapp.com",
   projectId: "healthy-recipe-fbb2b",

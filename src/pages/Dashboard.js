@@ -6,6 +6,9 @@ import 'firebase/compat/auth';
 import '../styles/dashboard.css';
 
 import PublishRecipeForm from '../components/PublishRecipeForm';
+import RecipeListDashboardCRUID from '../components/RecipeListDashboardCRUID';
+import AboutApp from '../components/AboutApp'
+import ListHome from '../components/ListHome'
 
 function Dashboard({ setIsDashboardScreen, isDashboardScreen }) {
   const location = useLocation();
@@ -55,9 +58,9 @@ function Dashboard({ setIsDashboardScreen, isDashboardScreen }) {
     if (menuItem === 'publish') {
       setContent(<PublishRecipeForm />);
     } else if (menuItem === 'all') {
-      setContent('This is the All Recipes content.');
+      setContent(<RecipeListDashboardCRUID />);
     } else if (menuItem === 'about') {
-      setContent('This is the About App content.');
+      setContent(<AboutApp />);
     }
   };
 

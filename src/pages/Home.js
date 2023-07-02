@@ -1,12 +1,15 @@
 import React from 'react';
 
 import Slider from '../components/Slider';
+import ListHome from '../components/ListHome';
 
 function Home() {
   return (
     <div>
-        <Slider /> 
-        <h1>Home page</h1>
+      <Slider />    
+        <div>
+          <ListHome /> 
+        </div>
     </div>
   );
 }

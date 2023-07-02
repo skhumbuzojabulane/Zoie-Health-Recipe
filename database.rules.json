@@ -2,14 +2,16 @@
   "rules": {
     "recipes": {
       ".read": true,
-      ".write": "auth != null"
+      ".write": "auth != null",
+      "$recipeId": {
+        ".write": "auth != null && data.exists() && data.child('userId').val() == auth.uid"
+      }
     },
     "storage": {
       "covers": {
         "$recipeId": {
           ".write": "auth != null",
           ".validate": "request.resource.contentType.startsWith('image/') && request.resource.size < 5 * 1024 * 1024"
-
         }
       }
     }
